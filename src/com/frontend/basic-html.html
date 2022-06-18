@@ -10,13 +10,15 @@
 </head>
 
 <style>
-    *{scroll-behavior: smooth;}
+    * {
+        scroll-behavior: smooth;
+    }
 </style>
 
 <body>
 
     <a href="#scroll">scroll</a>
-    
+
     <h1>Judul Page</h1>
     <h2>Judul Page</h2>
     <h3>Judul Page</h3>
@@ -113,15 +115,116 @@
         2. Pada halaman Welcome, buat button 'back', 
             jika di klik menuju kembali ke halaman basic html 1
     -->
-    <p>Lorem Ipsum is simply <span style="color:yellow; font-weight:bold;"> dummy text of the printing</span> and typesetting industry. Lorem Ipsum has been the
-       dummy text ever since the <span style="color: blue;font-style: italic;"> 1500s</span>, when an unknown printer took a galley of type and scrambled
+    <p>Lorem Ipsum is simply <span style="color:yellow; font-weight:bold;"> dummy text of the printing</span> and
+        typesetting industry. Lorem Ipsum has been the
+        dummy text ever since the <span style="color: blue;font-style: italic;"> 1500s</span>, when an unknown printer
+        took a galley of type and scrambled
         it to make a type specimen book. </p>
 
-<footer>
-    <section id="scroll">
-        bottom
-    </section>
-</footer>
+    <hr>
+
+    <h2><span style="color: blue;">Image 1</span> KH</h2>
+
+    <img width="130" height="80" src="resources/img/java-logo.png" alt="java-logo">
+
+    <hr>
+    <div>
+        <table border="5">
+            
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Name</th>
+                    <th>IPK</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="font-weight: bold;">1</td>
+                    <td>Rizky</td>
+                    <td>3.70</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">2</td>
+                    <td>Vizky</td>
+                    <td>3.30</td>
+                </tr>
+                
+                <tr>
+                    <td>Ronald</td>
+                    <td>3.42</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3" align="center">Footer</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+    <hr>
+
+    <div>
+        ul list
+        <ul>Buku
+            <li>Harry Potter</li>
+            <li>11:11</li>
+            <li>Spring in Action</li>
+        </ul>
+
+        ol list
+        <ol>
+            <li>Harry Potter</li>
+            <li>11:11</li>
+            <li>Spring in Action</li>
+            <li>Spring in Action</li>
+            <li>Spring in Action</li>
+            <li>Spring in Action</li>
+            <li>Spring in Action</li>
+            <li>Spring in Action</li>
+            <li>Spring in Action</li>
+            <li>Spring in Action</li>
+        </ol>
+        <dl>
+            <dt>
+                <b>study</b>
+            </dt>
+            <dd>belajar, sinau</dd>
+            <dt>
+                <b>study</b>
+            </dt>
+            <dd>belajar, sinau</dd>
+            <dt>
+                <b>study</b>
+            </dt>
+            <dd>belajar, sinau</dd>
+            <dt>
+                <b>study</b>
+            </dt>
+            <dd>belajar, sinau</dd>
+            <dt>
+                <b>study</b>
+            </dt>
+            <dd>belajar, sinau</dd>
+        </dl>
+    </div>
+
+    <hr>
+    <div>
+
+        <form action="subfrontend/welcome.html" method="post">
+            <input type="text" placeholder="Username" name="username">
+            <input type="password" placeholder="Password" name="password">
+            <input type="submit" value="submit">
+        </form>
+
+    </div>
+
+    <footer>
+        <section id="scroll">
+        </section>
+    </footer>
 </body>
 
 </html>
