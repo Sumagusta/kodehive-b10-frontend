@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html and css</title>
+
+    
+
+</head>
+<style>
+    /* * {
+        color: red;
+        padding: 10px 20px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    } */
+
+    *{
+        color: green;
+        padding: 10px 20px;
+    }
+
+    h1{
+        color: yellow;
+        padding: 10px 20px;
+    }
+
+    div{
+        width: 100px;
+        height: 100px;
+        background-color: #E5EDED;
+    }
+
+    /* descendant selector -> jika ada tag <p> didalam tag <div> maka tag p akan diberikan css */
+    div p{
+        color: blue;
+        font-size: large;
+    }
+
+    /* class = . | id = # */
+
+    .segitiga {
+        width: 0;
+        height: 0;
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
+        border-bottom: 100px solid red;
+    }
+
+    .biru {
+        color: blue;
+        font-weight: bold;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+</style>
+<body>
+    <h1>CSS 1</h1>
+    <h2>CSS 2</h2>
+    <h3>CSS 3</h3>
+
+    <p>Lorem Ipsum bvhsbavbibi</p>
+
+    <div style="background-color: #CC6633;">
+        <label>LABEL TAG</label>
+        <p>PARAGRAPH TAG</p>
+    </div>
+<hr><br>
+    <span class="segitiga biru">
+        SEGITIGA
+    </span>
+
+
+</body>
+
+</html>
