@@ -55,6 +55,38 @@
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
 
+    #cssId{
+        color: aqua;
+    }
+
+    /* turunan secara langsung */
+    span > input[type="text"]{
+        background-color: #1eff00;
+        color: aqua; 
+        font-weight: bold;
+    }
+
+    span input[type="text"]{
+        background-color: #ff0077;
+        color: aqua; 
+        font-weight: bold;
+    }
+
+    /* attribute selector */
+    input[type="text"]{
+        background-color: #CC6633;
+    }
+
+    span div{
+        width: 150px;
+        height: 100px;
+        background-color: #00ffff;
+    }
+
+    h4, h5, h6 {
+        background-color: #ff0077;
+    }
+
 </style>
 <body>
     <h1>CSS 1</h1>
@@ -72,7 +104,47 @@
         SEGITIGA
     </span>
 
+    <span id="cssId">
+        TESTING
+        
+    </span>
 
+    <span>
+        <div>
+            <label>Turunan Span</label>
+        </div>
+    </span>
+
+    <h3>Descendant Selector</h3>
+    <span>
+        <div>
+            <input type="text" value="data" />
+        </div>
+    </span>
+
+    <h3>Child Selector</h3>
+    <span>
+        <input type="text" value="data" />
+    </span>
+
+    <input type="password" value="DATA TEXT" />
+
+    <div>
+        dd
+    </div>
+
+    <span>
+        <div>
+            ss
+        </div>
+    </span>
+
+    <h2>GROUPING SELECTORS</h2>
+    <div>
+        <h4>GROUPING 1</h4>
+        <h5>GROUPING 2</h5>
+        <h6>GROUPING 3</h6>
+    </div>
 </body>
 
 </html>
