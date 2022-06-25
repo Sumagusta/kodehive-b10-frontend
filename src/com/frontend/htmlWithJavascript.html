@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML with Javascript</title>
+</head>
+
+<body>
+
+    <button onclick="notifikasi()">Notifikasi</button>
+
+    <button onclick="toko('10 Roti Bakar', 10000)">Toko</button>
+    <button onclick="toko2('10 Roti Bakar', 10000)">Toko 2</button>
+
+    <h2 onclick="rumus1()">KLIK ME</h2>
+
+    <form onsubmit="return rumus1();">
+        <h3>Please Klik Submit</h3>
+        <input type="submit" value="submit">
+    </form>
+
+    <div>
+        <h3>Please Klik Submit</h3>
+        <input onclick="return rumus1()" type="submit" value="submit">
+    </div>
+
+<script>
+        var data = 9
+        var dataString = "kodehive"
+        dataString = 900
+        console.log(dataString +" "+ data + dataString);
+
+        dataString += " academy";
+        console.log(dataString);
+
+        const angka = 15;
+        //angka = 10;
+        console.log(angka);
+
+        let dataLet = 80000;
+        dataLet = 90
+        console.log('data let '+dataLet);
+
+        function contohFunc() {
+            for (let index = 0; index < 5; index++) {
+                console.log(index);
+            }
+        }
+        
+        contohFunc()
+
+        function notifikasi(){
+            alert("Belajar Javascript")
+        }
+
+        function toko(belanjaan, totalHarga){
+            console.log("Belanjaan : "+belanjaan);
+            console.log("Total Harga : "+totalHarga);
+        }
+
+        function toko2(belanjaan, totalHarga){
+            // DOM -> memanipulasi synthax html melalui javascript
+            document.write("Belanjaan : "+belanjaan+"<br />")
+            document.write("Total Harga : "+totalHarga)
+        }
+
+        // return func
+        function tambah(a, b){
+            hasil = a + b
+            return hasil
+        }
+
+        function rumus1() {
+            data = 100
+            data += tambah(10, 5)
+            //console.log('result rumus 1 : '+data);
+            document.write('result rumus 1 : '+data)
+        }
+
+        /*
+            
+        */
+        
+
+</script>
+
+</body>
+
+</html>
