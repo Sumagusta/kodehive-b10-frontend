@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML with Javascript</title>
+
+    <link rel="stylesheet" href="resources/css/bootstrap.min.css">
 </head>
 
 <body>
@@ -27,69 +29,22 @@
         <input onclick="return rumus1()" type="submit" value="submit">
     </div>
 
-    <h1>HELLOW WORLD!</h1>
+    <h1 id="hello">HELLOW WORLD!</h1>
     <!-- GANTI HELLO WORLD DENGAN 'USING DOM' -->
 
-<script>
-        var data = 9
-        var dataString = "kodehive"
-        dataString = 900
-        console.log(dataString +" "+ data + dataString);
+    <div id="inner"></div>
 
-        dataString += " academy";
-        console.log(dataString);
+    <div id="testDiv">
+        <p>Data Paraph 1</p>
+        <p>Data Paraph 2</p>
+        <p>Data Paraph 3</p>
+    </div>
 
-        const angka = 15;
-        //angka = 10;
-        console.log(angka);
+    <button onclick="changeDataUsingDOM()">GANTI</button>
+    <button onclick="changeDataUsingDOM2()">GANTI div to table</button>
+    <button onclick="arrayJs()">test</button>
 
-        let dataLet = 80000;
-        dataLet = 90
-        console.log('data let '+dataLet);
-
-        function contohFunc() {
-            for (let index = 0; index < 5; index++) {
-                console.log(index);
-            }
-        }
-        
-        contohFunc()
-
-        function notifikasi(){
-            alert("Belajar Javascript")
-        }
-
-        function toko(belanjaan, totalHarga){
-            console.log("Belanjaan : "+belanjaan);
-            console.log("Total Harga : "+totalHarga);
-        }
-
-        function toko2(belanjaan, totalHarga){
-            // DOM -> memanipulasi synthax html melalui javascript
-            document.write("Belanjaan : "+belanjaan+"<br />")
-            document.write("Total Harga : "+totalHarga)
-        }
-
-        // return func
-        function tambah(a, b){
-            hasil = a + b
-            return hasil
-        }
-
-        function rumus1() {
-            data = 100
-            data += tambah(10, 5)
-            //console.log('result rumus 1 : '+data);
-            document.write('result rumus 1 : '+data)
-        }
-
-        /*
-            
-        */
-        
-
-</script>
-
+    <script src="resources/js/jsForHtmlWithJs.js"></script>
 </body>
 
 </html>
