@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>validation</title>
+</head>
+<body>
+    <div>
+        <div>
+            <input type="text" placeholder="Username" id="username"/><br>
+            <p id="usernameNotice" style="color: red; display: none;">Mohon isi username anda!</p>
+        </div>
+        <br>
+        <div>
+            <input type="password" placeholder="Password" id="password"/><br>
+            <p id="passwordNotice" style="color: red; display: none;">Mohon isi password anda!</p>
+        </div>
+        <br>
+        <div>
+            <button onclick="validate();">Submit</button>
+        </div>
+    </div>
+
+    <script src="resources/js/validation.js"></script>
+</body>
+</html>

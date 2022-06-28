@@ -104,3 +104,61 @@ var data = 9
             }
             
         }
+
+        function indexOf()
+        {
+            var str = "welcome broo"
+
+            var startIndex = 5
+            var karakter = 'o'
+            var indexChar = str.indexOf(karakter, startIndex)
+            console.log('data : '+ str);
+            console.log('index dari karakter '+karakter+' adalah '+indexChar+' saat pencarian dimulai dari index ke - '+startIndex);
+        }
+
+        function sliceArr(){
+            var game = ['stumble guy', 'mobile legend', 'pubg', 'marvel duel']
+
+            console.log('slice with startIndex : '+game.slice(1));
+            console.log('slice with startIndex and endIndex-1 : '+game.slice(0, 3));
+        }
+
+        function spliceArr(){
+            var game = ['stumble guy', 'mobile legend', 'pubg', 'marvel duel']
+
+            console.log(game.splice(0, 1, 'pes2022','marvel future','marvel part 2'));
+            console.log(game);
+            game.push('auto chess')
+            console.log('after push data array : '+ game);
+            console.log(game);
+        }
+
+        function filterDataArray(){
+
+            // test filter 1
+            data=['a', 'test', true, false, 5, 'la', 0].filter(Boolean);
+
+            console.log(data);
+
+            // test filter 2
+            var data2 = ['hai', 'hello', 0, false, 1, true, 900, 'ok', 'hello', 900, 'hello'];
+            var dataFilter = [900]
+            console.log(data2);
+
+            var res = data2.filter(item => dataFilter.includes(item));        
+            console.log(res.length);
+        }
+
+        function forEachExample(){
+            var data = [10, 20, 10]
+            var result = []
+
+            data.forEach(function(){
+                console.log('test')
+            })
+            console.log(result);
+        }
+
+            
+
+        
