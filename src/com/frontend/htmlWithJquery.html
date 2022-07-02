@@ -9,6 +9,14 @@
 
     <link rel="stylesheet" href="resources/css/bootstrap.min.css">
     <script src="resources/js/jquery/jquery-3.6.0.min.js"></script>
+
+    <style>
+        #shape{
+            width: 100px;
+            height: 100px;
+            background-color: aquamarine;
+        }
+    </style>
 </head>
 
 <body>
@@ -19,23 +27,28 @@
 
     <img src="" alt="error call">
     
-    <div class="form-group" style="padding-top: 50px; padding-left: 25px;">
+    <div class="form-group" style="padding-top: 50px; padding-left: 25px; padding-bottom: 50px;">
         Username <input style="width: 400px;" type="text" name="inp1name" id="inp1">
+        <p id="paraf"></p>
     <button id="sub" onclick="addClassEle();">Submit</button>
     <button id="delete">Remove bootstrap</button>
     </div>
 
-    <div>
-        
+    <div style="padding: 25px 25px 25px 25px;">
+        <div id="shape">
+
+        </div>
     </div>
-
-
+    
     <script>
 
+        // : dijalankan ketika semua element html sudah berhasil di eksekusi
         $(document).ready(
             addAttrValueToElement(),
             jQueryAttr2(),
-            removeClassBootstrap()
+            removeClassBootstrap(),
+            domJquery(),
+            event2()
           
         );
 
@@ -55,7 +68,22 @@
 
         function removeClassBootstrap(){
             $('#delete').on('click', function(){
-                $('#inp1').removeClass().removeAttr('style')
+                $('#inp1').removeClass().removeAttr('style').css('width','400px')
+            })
+        }
+
+        function domJquery(){
+            $('#shape').on('click', function(){
+                $(this).html('<h2>PERSEGI</h2>').css('color','white')
+               //$('#shape').html('<h2>TEST</h2>').css('color','white')
+            })
+        }
+
+        // on
+        function event2(){
+            $('#inp1').on('click',function(){
+                $(this).val('ini text field')
+                $('#paraf').text($(this).val())
             })
         }
     </script>
