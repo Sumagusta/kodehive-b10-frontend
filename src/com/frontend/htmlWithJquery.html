@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JQuery</title>
 
+    <link rel="stylesheet" href="resources/css/bootstrap.min.css">
     <script src="resources/js/jquery/jquery-3.6.0.min.js"></script>
 </head>
+
 <body>
     <h1>USING JQUERY</h1>
 
@@ -15,23 +18,47 @@
     <div id="titleC1"></div>
 
     <img src="" alt="error call">
+    
+    <div class="form-group" style="padding-top: 50px; padding-left: 25px;">
+        Username <input style="width: 400px;" type="text" name="inp1name" id="inp1">
+    <button id="sub" onclick="addClassEle();">Submit</button>
+    <button id="delete">Remove bootstrap</button>
+    </div>
+
+    <div>
+        
+    </div>
+
 
     <script>
 
         $(document).ready(
             addAttrValueToElement(),
-            jQueryAttr2()
-        ); 
+            jQueryAttr2(),
+            removeClassBootstrap()
+          
+        );
 
-        function addAttrValueToElement(){
+        function addAttrValueToElement() {
             var title = $('#contoh1').attr('title')
-            $('#titleC1').text(title).css('color','red')
+            $('#titleC1').text(title).css('color', 'red')
         }
 
         function jQueryAttr2() {
             // add new attribute to element
-            $('img').attr('src', 'resources/img/java-logo.png').css('width','225px')
+            $('img').attr('src', 'resources/img/java-logo.png').css('width', '225px')
+        }
+
+        function addClassEle(){
+            $('#inp1').addClass('form-control').css({'color':'white', 'background-color':'red'})
+        }
+
+        function removeClassBootstrap(){
+            $('#delete').on('click', function(){
+                $('#inp1').removeClass().removeAttr('style')
+            })
         }
     </script>
 </body>
+
 </html>
